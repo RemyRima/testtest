@@ -1,0 +1,145 @@
+body{
+ background:white;
+  
+
+}
+#home{
+margin:0px;
+  background:#000066;
+   width: 100%;
+   top:-20px
+}
+.stars{
+  position:relative;
+  height:110vh;
+  width: 100%;
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
+.star1{
+  width: 4px;
+  height: 4px;
+  background: yellow;
+  position:absolute;
+  transition-duration: 900ms;
+  transition-timing-function: linear;
+}
+.star2{
+  width:2px;
+  height:2px;
+  transition-duration:400ms;
+  background: yellow;
+  position:absolute;
+  transition-timing-function: linear;
+}
+.star3{
+  width:1px;
+  height:1px;
+  transition-duration:100ms;
+  background: yellow;
+  position:absolute;
+  transition-timing-function: linear;
+}
+img{
+    position:absolute;
+    right: 50px;  
+    top:30px;
+    max-width:100%;
+}
+#tittle{
+    color: snow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5em;
+    position:absolute;     
+    top:200px;
+    left:40px;
+}
+section{
+    background-color: white;
+    width: 100%;
+}
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+p {
+  padding: 2%;
+  background: #fff9c6;
+  color: #c7b27e;
+  border: 1px solid #fce29f;
+  border-radius: .25em;
+}
+#text{
+     display: block;
+    word-wrap:break-word;
+    width: 100%;
+    white-space: normal;
+    text-align: left;
+}
+#audio{
+    bottom: 100px;
+}
+section:nth-child(even) {
+  background: white;
+}
+section:nth-child(odd) {
+  background: snow;
+}
+section h2 {
+  text-align: center;
+}
+h1,h2,h3 {
+	margin:0 0 35px 0;
+	font-family: 'Patua One', cursive;
+	text-transform: uppercase;
+	letter-spacing:1px;
+}
+a{
+	color:#26a5d3;
+}
+a:hover,a:focus{
+	text-decoration:none;
+	color:#26a5d3;
+}
+
+#contact{
+	padding-bottom:80px;
+}
+textarea.form-control{
+    height:100px;
+}
+hr{
+border-top: 1px solid #8c8b8b;
+}
+	
